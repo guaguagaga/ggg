@@ -1476,7 +1476,7 @@ echo -e "  ShadowsocksR 一键管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_
 ————————————
  ${Green_font_prefix}14.${Font_color_suffix} 其他功能
  ${Green_font_prefix}15.${Font_color_suffix} 升级脚本
- ${Green_font_prefix}15.${Font_color_suffix} 下载bbr脚本
+ ${Green_font_prefix}16.${Font_color_suffix} 下载bbr脚本
  "
 menu_status
 echo && read -e -p "请输入数字 [1-16]：" num
