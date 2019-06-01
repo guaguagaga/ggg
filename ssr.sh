@@ -10,7 +10,7 @@ export PATH
 #	Blog: https://doub.io/ss-jc42/
 #=================================================
 
-sh_ver="2.0.38"
+sh_ver="2.0.39"
 filepath=$(cd "$(dirname "$0")"; pwd)
 file=$(echo -e "${filepath}"|awk -F "$0" '{print $1}')
 ssr_folder="/usr/local/shadowsocksr"
@@ -1420,13 +1420,13 @@ Set_config_connect_verbose_info(){
 	fi
 }
 Update_Shell(){
-	sh_new_ver=$(wget --no-check-certificate -qO- -t1 -T3 "https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1) && sh_new_type="github"
+	sh_new_ver=$(wget --no-check-certificate -qO- -t1 -T3 "https://raw.githubusercontent.com/guaguagaga/ggg/master/ssr.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1) && sh_new_type="github"
 	[[ -z ${sh_new_ver} ]] && echo -e "${Error} 无法链接到 Github !" && exit 0
 	if [[ -e "/etc/init.d/ssr" ]]; then
 		rm -rf /etc/init.d/ssr
 		Service_SSR
 	fi
-	wget -N --no-check-certificate "https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh" && chmod +x ssr.sh
+	wget -N --no-check-certificate "https://raw.githubusercontent.com/guaguagaga/ggg/master/ssr.sh" && chmod +x ssr.sh
 	echo -e "脚本已更新为最新版本[ ${sh_new_ver} ] !(注意：因为更新方式为直接覆盖当前运行的脚本，所以可能下面会提示一些报错，无视即可)" && exit 0
 }
 # 显示 菜单状态
@@ -1476,6 +1476,7 @@ echo -e "  ShadowsocksR 一键管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_
 ————————————
  ${Green_font_prefix}14.${Font_color_suffix} 其他功能
  ${Green_font_prefix}15.${Font_color_suffix} 升级脚本
+ ${Green_font_prefix}15.${Font_color_suffix} 下载bbr脚本
  "
 menu_status
 echo && read -e -p "请输入数字 [1-16]：" num
