@@ -1793,6 +1793,11 @@ menu_status(){
 		echo -e " 当前状态: ${Red_font_prefix}未安装${Font_color_suffix}"
 	fi
 }
+# BBR安装脚本
+bbr_speeder(){
+         wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh 
+         echo -e "已下载！" && exit 0
+}
 check_sys
 [[ ${release} != "debian" ]] && [[ ${release} != "ubuntu" ]] && [[ ${release} != "centos" ]] && echo -e "${Error} 本脚本不支持当前系统 ${release} !" && exit 1
 action=$1
@@ -1822,9 +1827,10 @@ else
 ————————————
  ${Green_font_prefix}14.${Font_color_suffix} 其他功能
  ${Green_font_prefix}15.${Font_color_suffix} 升级脚本
+ ${Green_font_prefix}16.${Font_color_suffix} 下载bbr脚本
  "
 	menu_status
-	echo && read -e -p "请输入数字 [1-15]：" num
+	echo && read -e -p "请输入数字 [1-16]：" num
 case "$num" in
 	1)
 	Install_SSR
@@ -1871,8 +1877,11 @@ case "$num" in
 	15)
 	Update_Shell
 	;;
+        16)
+	bbr_speeder
+	;;
 	*)
-	echo -e "${Error} 请输入正确的数字 [1-15]"
+	echo -e "${Error} 请输入正确的数字 [1-16]"
 	;;
 esac
 fi
