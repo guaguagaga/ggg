@@ -10,6 +10,7 @@ export PATH
 #	Blog: https://doub.io/ss-jc60/
 #=================================================
 
+
 sh_ver="1.0.26"
 filepath=$(cd "$(dirname "$0")"; pwd)
 file=$(echo -e "${filepath}"|awk -F "$0" '{print $1}')
