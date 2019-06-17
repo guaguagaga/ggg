@@ -8,5 +8,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/guaguagaga/ggg/
 ```
 ssrmu.sh
 ``` bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/guaguagaga/ggg/master/ssrmu.sh && chmod +x ssr.sh && bash ssr.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/guaguagaga/ggg/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 ```
