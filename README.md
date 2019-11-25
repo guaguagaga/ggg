@@ -20,5 +20,5 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-
 ```
 KCPTUN
 ```
-wget --no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh && chmod +x kcptun.sh && bash kcptun.sh
+wget -N --no-check-certificate "https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh" && chmod +x kcptun.sh && bash kcptun.sh
 ```
