@@ -19,6 +19,6 @@ bbr+魔改+锐速
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && bash tcp.sh
 ```
 KCPTUN
-```
+```bash
 wget -N --no-check-certificate "https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh" && chmod +x kcptun.sh && bash kcptun.sh
 ```
