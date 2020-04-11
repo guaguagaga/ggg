@@ -22,3 +22,7 @@ KCPTUN
 ```bash
 wget -N --no-check-certificate "https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh" && chmod +x kcptun.sh && bash kcptun.sh
 ```
+v2
+```bash
+bash <(curl -s -L https://git.io/v2ray.sh)
+```
