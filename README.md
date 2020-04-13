@@ -16,13 +16,10 @@ wget --no-check-certificate -q -O bbr2.sh "https://raw.githubusercontent.com/yey
 ```
 bbr+魔改+锐速
 ``` bash
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && bash tcp.sh
+wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
 KCPTUN
 ```bash
 wget -N --no-check-certificate "https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh" && chmod +x kcptun.sh && bash kcptun.sh
 ```
-v2
-```bash
-bash <(curl -s -L https://git.io/v2ray.sh)
-```
+
