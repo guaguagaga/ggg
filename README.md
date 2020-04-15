@@ -16,7 +16,7 @@ wget --no-check-certificate -q -O bbr2.sh "https://raw.githubusercontent.com/yey
 ```
 bbr+魔改+锐速
 ``` bash
-wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+wget -N "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
 KCPTUN
 ```bash
