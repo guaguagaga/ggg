@@ -22,4 +22,7 @@ KCPTUN
 ```bash
 wget -N --no-check-certificate "https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh" && chmod +x kcptun.sh && bash kcptun.sh
 ```
-
+speedtest-go
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/BigMangos/speedtest-go-script/master/install.sh && chmod +x install.sh && bash install.sh
+```
